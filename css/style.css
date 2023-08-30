@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 2000px;
+}
+
+.carousel-container {
+  width: 390px;
+  background-color: #eee;
+  border-radius: 20px;
+  padding: 0 5px;
+  position: relative;
+  overflow: hidden;
+
+  border: 20px solid red;
+}
+
+.carousel {
+  display: flex;
+  position: relative;
+  right: 0;
+  transition: right 600ms;
+}
+
+.carousel li {
+  list-style: none;
+}
+
+.right,
+.left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.right {
+  right: 3px;
+}
+
+.left {
+  left: 3px;
+}
